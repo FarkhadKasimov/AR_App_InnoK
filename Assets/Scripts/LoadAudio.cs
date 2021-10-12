@@ -7,6 +7,8 @@ using UnityEngine.Networking;
 public class LoadAudio : MonoBehaviour
 {
     private AudioSource audioSource;
+    [HideInInspector]
+    public Coroutine audioCoroutine;
     AudioClip myClip;
 
     private void Start()
@@ -32,5 +34,15 @@ public class LoadAudio : MonoBehaviour
                 audioSource.Play();
             }
         }
+    }
+
+    public void StopAudio()
+    {
+        if (audioCoroutine != null)
+        {
+            StopCoroutine(audioCoroutine);
+        }
+        
+        audioSource.Stop();
     }
 }

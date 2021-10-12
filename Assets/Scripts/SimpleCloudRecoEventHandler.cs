@@ -1,23 +1,19 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using Lean.Localization;
 using Vuforia;
 
 public class SimpleCloudRecoEventHandler : MonoBehaviour
 {
-    CloudRecoBehaviour mCloudRecoBehaviour;
-    bool mIsScanning = false;
+    [HideInInspector]
+    public CloudRecoBehaviour mCloudRecoBehaviour;
+    public bool mIsScanning = false;
     string mTargetMetadata = "";
 
+    public Parametrs parameter;
     public ImageTargetBehaviour ImageTargetTemplate;
-    [SerializeField]
-    private ContentController contentController;
-    [SerializeField]
-    private LoadAudio loadAudio;
-    [SerializeField]
-    private string text;
-    [SerializeField]
-    private Text textUI;
+    
 
     [Obsolete]
     // Register cloud reco callbacks
@@ -64,6 +60,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         if (scanning)
         {
             // Clear all known targets
+            mCloudRecoBehaviour.ClearTrackables(false);
         }
     }
 
@@ -83,24 +80,8 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
             mCloudRecoBehaviour.EnableTracking(cloudRecoSearchResult, ImageTargetTemplate.gameObject);
         }
 
-        Parametrs parameter = new Parametrs();
         parameter = JsonUtility.FromJson<Parametrs>(mTargetMetadata);
 
-        if (!String.IsNullOrEmpty(parameter.model))
-        {
-            contentController.LoadContent(parameter.model);
-        }
-
-        if (!String.IsNullOrEmpty(parameter.audio))
-        {
-            StartCoroutine(loadAudio.GetAudioClip(parameter.audio));
-        }
-
-        if (!String.IsNullOrEmpty(parameter.text))
-        {
-            text = parameter.text;
-            textUI.text = text;
-        }
     }
 }
 
@@ -108,6 +89,16 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 public class Parametrs
 {
     public string model;
-    public string audio;
-    public string text;
+    public float scale;
+    public float rotation;
+
+    public bool audio;
+    public string audio_en;
+    public string audio_ru;
+    public string audio_uz;
+
+    public bool text;
+    public string text_en;
+    public string text_ru;
+    public string text_uz;
 }

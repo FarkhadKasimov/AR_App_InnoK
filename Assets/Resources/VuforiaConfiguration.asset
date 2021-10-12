@@ -20,7 +20,7 @@ MonoBehaviour:
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     virtualSceneScaleFactor: 1
-    useDelayedLoadingObjectTargets: 0
+    useDelayedLoadingObjectTargets: 1
     modelTargetRecoWhileExtendedTracked: 0
     shareRecordingsInITunes: 0
     version: 10.2.5
