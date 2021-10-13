@@ -18,13 +18,20 @@ public class FadeUI : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(AutoFade());
+
     }
 
     public void ShowPanel()
     {
         if (gameObject.activeInHierarchy)
             StartCoroutine(FadeCanvasGroup(uiElement, uiElement.alpha, 1, .5f));
+        uiElement.blocksRaycasts = true;
+    }
+
+    public void ShowPanelWithoutAnimation()
+    {
+        if (gameObject.activeInHierarchy)
+            StartCoroutine(FadeCanvasGroup(uiElement, uiElement.alpha, 1, .01f));
         uiElement.blocksRaycasts = true;
     }
 
