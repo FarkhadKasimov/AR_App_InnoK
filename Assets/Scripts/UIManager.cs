@@ -6,6 +6,10 @@ public class UIManager : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField]
+    private FadeUI logo;
+    [SerializeField]
+    private FadeUI floor;
+    [SerializeField]
     private FadeUI firstPanel;
     [SerializeField]
     private FadeUI languagePanel;
@@ -13,6 +17,10 @@ public class UIManager : MonoBehaviour
     private FadeUI mainUI;
     [SerializeField]
     private FadeUI settingsButton;
+    [SerializeField]
+    private FadeUI bg;
+    [SerializeField]
+    private FadeUI backButton;
 
     private void Awake()
     {
@@ -32,5 +40,23 @@ public class UIManager : MonoBehaviour
         firstPanel.HidePanel();
         mainUI.ShowPanel();
         settingsButton.ShowPanel();
+    }
+
+    public void StartAR()
+    {
+        bg.HidePanel();
+        logo.HidePanel();
+        mainUI.HidePanel();
+        floor.HidePanel();
+        backButton.ShowPanel();
+    }
+
+    public void BackToMenu()
+    {
+        bg.ShowPanel();
+        floor.ShowPanel();
+        logo.ShowPanel();
+        mainUI.ShowPanel();
+        backButton.HidePanel();
     }
 }
