@@ -42,7 +42,7 @@ public class LoadAudio : MonoBehaviour
         {
             StopCoroutine(audioCoroutine);
         }
-        
-        audioSource.Stop();
+        if(audioSource)
+            audioSource.Stop();
     }
 }

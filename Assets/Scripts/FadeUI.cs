@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CanvasGroup))]
 public class FadeUI : MonoBehaviour
 {
-    CanvasGroup uiElement;
+    private CanvasGroup uiElement;
 
     public float endTime = 0.5f;
 

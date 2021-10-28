@@ -19,6 +19,8 @@ public class CustomObserverEventHandler : DefaultObserverEventHandler
     private string text;
     [SerializeField]
     private Text textUI;
+    [SerializeField]
+    private UIManager uiManager;
 
     public static bool downloaded;
 
@@ -69,6 +71,11 @@ public class CustomObserverEventHandler : DefaultObserverEventHandler
                         break;
                 }
             }
+
+            if (simpleCloudRecoEventHandler.parameter.text)
+            {
+                uiManager.textPanel.ShowPanel();
+            }
         }
 
 
@@ -84,6 +91,7 @@ public class CustomObserverEventHandler : DefaultObserverEventHandler
         {
             Destroy(child.gameObject);
         }
+        uiManager.textPanel.HidePanel();
         loadAudio.StopAudio();
         simpleCloudRecoEventHandler.mCloudRecoBehaviour.enabled = true;
         downloaded = false;
