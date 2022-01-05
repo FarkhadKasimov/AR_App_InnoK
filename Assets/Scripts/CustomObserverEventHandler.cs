@@ -34,7 +34,7 @@ public class CustomObserverEventHandler : DefaultObserverEventHandler
 
             if (!String.IsNullOrEmpty(simpleCloudRecoEventHandler.parameter.model))
             {
-                contentController.LoadContent(simpleCloudRecoEventHandler.parameter.model, simpleCloudRecoEventHandler.parameter.scale, simpleCloudRecoEventHandler.parameter.rotation);
+                contentController.LoadContent(simpleCloudRecoEventHandler.parameter.model, simpleCloudRecoEventHandler.parameter.scale, simpleCloudRecoEventHandler.parameter.rotation, simpleCloudRecoEventHandler.parameter.url);
             }
 
             if (simpleCloudRecoEventHandler.parameter.audio)

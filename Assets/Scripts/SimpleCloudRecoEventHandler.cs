@@ -74,6 +74,8 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         // Stop the scanning by disabling the behaviour
         mCloudRecoBehaviour.enabled = false;
 
+        Debug.Log($"Metadata: {mTargetMetadata}");
+
         if (ImageTargetTemplate)
         {
             /* Enable the new result with the same ImageTargetBehaviour: */
@@ -101,4 +103,6 @@ public class Parametrs
     public string text_en;
     public string text_ru;
     public string text_uz;
+
+    public string url;
 }
