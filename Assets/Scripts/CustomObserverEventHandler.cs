@@ -24,6 +24,13 @@ public class CustomObserverEventHandler : DefaultObserverEventHandler
 
     public static bool downloaded;
 
+    public bool dwnld;
+
+    private void Update()
+    {
+        dwnld = downloaded;
+    }
+
     protected override void OnTrackingFound()
     {
         Debug.Log("Target Found");

@@ -76,11 +76,11 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         Debug.Log($"Metadata: {mTargetMetadata}");
 
-        if (ImageTargetTemplate)
-        {
+        //if (ImageTargetTemplate)
+        //{
             /* Enable the new result with the same ImageTargetBehaviour: */
             mCloudRecoBehaviour.EnableTracking(cloudRecoSearchResult, ImageTargetTemplate.gameObject);
-        }
+        //}
 
         parameter = JsonUtility.FromJson<Parametrs>(mTargetMetadata);
 
