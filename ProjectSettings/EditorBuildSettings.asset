@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/arTest.unity
     guid: 0d92ce93526499b4d8e8f077a1ee4713
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 71f2d2d9dd8087c4bb597a7e5619e09c
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 13896706d333e5548973028d62f685a7, type: 2}

@@ -19,19 +19,22 @@ public class LoadAudio : MonoBehaviour
     [System.Obsolete]
     public IEnumerator GetAudioClip(string url)
     {
-        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.MPEG))
+        if (!string.IsNullOrEmpty(url))
         {
-            yield return www.Send();
+            using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.MPEG))
+            {
+                yield return www.Send();
 
-            if (www.isNetworkError)
-            {
-                Debug.Log(www.error);
-            }
-            else
-            {
-                myClip = DownloadHandlerAudioClip.GetContent(www);
-                audioSource.clip = myClip;
-                audioSource.Play();
+                if (www.isNetworkError)
+                {
+                    Debug.Log(www.error);
+                }
+                else
+                {
+                    myClip = DownloadHandlerAudioClip.GetContent(www);
+                    audioSource.clip = myClip;
+                    audioSource.Play();
+                }
             }
         }
     }
