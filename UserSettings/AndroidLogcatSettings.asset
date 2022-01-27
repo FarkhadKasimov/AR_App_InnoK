@@ -1,0 +1,107 @@
+{
+    "m_SelectedDeviceId": "mjjfzxr8wwwcpn5d",
+    "m_SelectedPackage": {
+        "deviceId": "mjjfzxr8wwwcpn5d",
+        "name": "com.DefaultCompany.InnoKids",
+        "processId": 2721,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.miui.home",
+            "processId": 1941,
+            "exited": false
+        },
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.DefaultCompany.InnoKids",
+            "processId": 24149,
+            "exited": true
+        },
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.DefaultCompany.InnoKids",
+            "processId": 24745,
+            "exited": true
+        },
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.DefaultCompany.InnoKids",
+            "processId": 27809,
+            "exited": true
+        },
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.DefaultCompany.InnoKids",
+            "processId": 28594,
+            "exited": true
+        },
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.DefaultCompany.InnoKids",
+            "processId": 31970,
+            "exited": true
+        },
+        {
+            "deviceId": "mjjfzxr8wwwcpn5d",
+            "name": "com.DefaultCompany.InnoKids",
+            "processId": 2721,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}

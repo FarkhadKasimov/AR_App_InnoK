@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3536692232415077323}
   - component: {fileID: 1652871164221658881}
   m_Layer: 0
-  m_Name: G'oz bolasi
+  m_Name: Goz bolasi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

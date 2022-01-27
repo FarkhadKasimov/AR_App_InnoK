@@ -72,7 +72,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         mTargetMetadata = cloudRecoSearchResult.MetaData;
 
         // Stop the scanning by disabling the behaviour
-        mCloudRecoBehaviour.enabled = false;
+        //mCloudRecoBehaviour.enabled = false;
 
         Debug.Log($"Metadata: {mTargetMetadata}");
 

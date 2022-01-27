@@ -7,6 +7,7 @@ using Vuforia;
 public class CustomObserverEventHandler : DefaultObserverEventHandler
 {
     public SimpleCloudRecoEventHandler simpleCloudRecoEventHandler;
+    public CloudRecoBehaviour mCloudRecoBehaviour;
     [SerializeField]
     private API api;
     [SerializeField]
@@ -33,6 +34,7 @@ public class CustomObserverEventHandler : DefaultObserverEventHandler
 
     protected override void OnTrackingFound()
     {
+        mCloudRecoBehaviour.enabled = false;
         Debug.Log("Target Found");
 
         if (!downloaded)
