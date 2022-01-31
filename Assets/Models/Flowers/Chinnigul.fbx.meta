@@ -5,30 +5,60 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steam 1
+    second: {fileID: 2100000, guid: d4ada9b14a1f09f439451a4c348002d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steam 2
+    second: {fileID: 2100000, guid: 86136b4dc059bf34bb0812efa7673ef2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steam 3
+    second: {fileID: 2100000, guid: 52e501139e1a75145805d9d7e22fef66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steam 4
+    second: {fileID: 2100000, guid: 827dcc2b2cb7ec8429c6430c6bea7e88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: petal 1
+    second: {fileID: 2100000, guid: 671802ecd90373642aa806ae86897cff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: petal 2
+    second: {fileID: 2100000, guid: 179890542a0b6df4d8a09e8c4a05667e, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: petal 1
-    second: {fileID: 2800000, guid: b597d00cc5933e6408045893140e3f84, type: 3}
+    second: {fileID: 2800000, guid: 41ca2621d94b0524b8b331a2790fd93e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: steam 1
-    second: {fileID: 2800000, guid: 2486cd82b3389b6449fa0e16ab0ba4aa, type: 3}
+    second: {fileID: 2800000, guid: d700f81b2e217de4a8d444eb7bb4cdf0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: steam 2
-    second: {fileID: 2800000, guid: 7c1b19d4e6252974b85b2368624c98fd, type: 3}
+    second: {fileID: 2800000, guid: 41445e66ead486d4283b51f08aafd177, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: steam 3
-    second: {fileID: 2800000, guid: 3b0c95a8f584e2d4a8fea73b01dc72a6, type: 3}
+    second: {fileID: 2800000, guid: e50b420639841cf4db885f8f59345d1f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: steam 4
-    second: {fileID: 2800000, guid: aa3e766d311f46e4397b6873123f6c06, type: 3}
+    second: {fileID: 2800000, guid: 0859283fb57e55b4a9bb8842cd277d4f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
